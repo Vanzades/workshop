@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Tampilan Dasbor -->
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="profile">
+                <img src="assets/avatar.png" alt="Avatar">
+                <div class="profile-info">
+                    <p>Hai, Khanza</p>
+                    <p style="color: #007BFF; font-weight: bold;">Administrator</p>
+                </div>
+            </div>
+            <div class="icons">
+                <img src="assets/bell.png" alt="Notifications">
+                <img src="assets/setting.png" alt="Settings">
+            </div>
+        </header>
+
+        <!-- Status Section -->
+        <div class="status">
+            <div class="status-item">
+                <p>2</p>
+                <p>Pengiriman</p>
+            </div>
+            <div class="status-item">
+                <p>0</p>
+                <p>Selesai</p>
+            </div>
+            <div class="status-item">
+                <p>1</p>
+                <p>Pengembalian</p>
+            </div>
+            <div class="status-item">
+                <p>1</p>
+                <p>Ulasan</p>
+            </div>
+        </div>
+
+        <!-- Content Navigation -->
+        <div class="navigation">
+            <div class="navigation-item">
+                <img src="assets/product.png" alt="Produk">
+                <p>Produk</p>
+            </div>
+            <div class="navigation-item">
+                <img src="assets/finance.png" alt="Keuangan">
+                <p>Keuangan</p>
+            </div>
+            <div class="navigation-item">
+                <img src="assets/performance.png" alt="Performa">
+                <p>Performa</p>
+            </div>
+        </div>
+
+        <!-- Graph -->
+        <div class="chart">
+            <canvas id="transactionChart"></canvas>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-item">
+                <img src="assets/home.png" alt="Home">
+                <p>Home</p>
+            </div>
+            <div class="footer-item">
+                <img src="assets/product.png" alt="Produk">
+                <p>Produk</p>
+            </div>
+            <div class="footer-item">
+                <img src="assets/chat.png" alt="Chat">
+                <p>Chat</p>
+            </div>
+            <div class="footer-item">
+                <img src="assets/user.png" alt="User">
+                <p>User</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Tampilan Daftar Pengguna -->
+    <div class="user-list">
+        <header>
+            <div class="profile">
+                <img src="assets/avatar.png" alt="Avatar">
+                <div class="profile-info">
+                    <p>Hai, Khanza</p>
+                    <p style="color: #007BFF; font-weight: bold;">Administrator</p>
+                </div>
+            </div>
+            <div class="icons">
+                <img src="assets/bell.png" alt="Notifications">
+                <img src="assets/setting.png" alt="Settings">
+            </div>
+        </header>
+
+        <!-- Total Pengguna Section -->
+        <div class="total-users">
+            <p>Total Pengguna</p>
+            <h2>50</h2>
+        </div>
+
+        <!-- User Table -->
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Tanggal</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dono</td>
+                    <td>28 Jan, 12:30 AM</td>
+                    <td><button class="deactivate">Nonaktifkan</button></td>
+                </tr>
+                <tr>
+                    <td>Kasino</td>
+                    <td>25 Jan, 10:40 PM</td>
+                    <td><button class="deactivate">Nonaktifkan</button></td>
+                </tr>
+                <tr>
+                    <td>Agus</td>
+                    <td>20 Jan, 10:40 PM</td>
+                    <td><button class="deactivate">Nonaktifkan</button></td>
+                </tr>
+                <tr>
+                    <td>Romlah</td>
+                    <td>15 Jan, 03:29 PM</td>
+                    <td><button class="deactivate">Nonaktifkan</button></td>
+                </tr>
+                <tr>
+                    <td>Junaedi</td>
+                    <td>14 Jan, 10:40 PM</td>
+                    <td><button class="deactivate">Nonaktifkan</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
